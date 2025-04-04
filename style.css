@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "FX_LED";
+    src: url("FX-LED Bold.TTF");
+}
+
+@font-face {
+    font-family: "HACK";
+    src: url("FX-LED Bold.TTF");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.digital-clock {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.week div {
+    padding: 5px 5;
+    border-radius: 5px;
+}
+
+.week .active {
+    color: white;
+}
+
+.week .today {
+    /* color: #fff; */
+    color: red;
+    font-weight: bolder;
+
+}
+
+.time {
+    font-family: "FX_LED";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
+.hour, .min, .dot ,.sec{
+    display: inline-block;
+    font-size: 13rem;
+}
+.sec {
+    color: rgb(255, 255, 255);
+}
+
+.sec.warning {
+    color: rgb(255, 0, 0);
+}
+.min {
+    display: math;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.dot.invisible {
+    visibility: hidden;
+}
